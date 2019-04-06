@@ -17,7 +17,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/Rectangle/Rectangle.html",
+            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/carInheritance/carInheritance.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
