@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "chrome",
             "request": "launch",
@@ -16,7 +17,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/Forms/forms.html",
+            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/reverseString/revStr.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
