@@ -11,11 +11,12 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
+        
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/display4Ways.html",
+            "url": "file:////C:/Users/TechAcademyStudent/OneDrive/Desktop/JSPROJECTS/Forms/forms.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
