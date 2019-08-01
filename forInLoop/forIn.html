@@ -47,7 +47,18 @@
 		console.log("Rectangle's Area: " + rectangle.getArea());
 		console.log(rectangle.getPerimeter());
 
-		
+
+	//Object Constructor
+		function Rectangle(length, width){
+			this.length = length;
+			this.width = width;
+			this.getArea = function(){
+			return this.width*this.length};
+			this.getPerimeter=function(){
+			return this.width*2 + this.length*2};
+		};
+		var rec1 = new Rectangle(5,10);
+		console.log("slkdfjslkdfjsldkfj   " + rec1.getArea());
 
 	</script>
 
