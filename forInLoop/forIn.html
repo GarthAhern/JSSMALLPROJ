@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>
+	</title>
+
+</head>
+<body>
+	<script>
+		var languages = {
+			english: "Hello!",
+			german: "Guten Tag!",
+			notALanguage: 10,
+			Spanish: "Hola"
+
+		};
+		for (var x in languages){
+			console.log(x);
+			console.log(": ");
+			console.log(languages[x])
+			console.log("\n");
+		}
+		for (let language in languages){
+			if ((typeof languages[language])==="string"){
+				document.write("<p>" + languages[language] + "</p>");
+			}
+		}
+
+		/**
+		Rectangle Object
+		@property: width - a number
+		@property: length - a number
+		@method: getPerimeter - returns a number
+		@method: getArea - returns a number
+
+		**/
+
+		var rectangle = new Object();
+		rectangle.width = 4;
+		rectangle.length = 6;
+		rectangle.getPerimeter = function(){
+			return this.width*2 + this.length*2;
+		}
+		rectangle.getArea = function(){
+			return this.width*this.length;
+		}
+
+		console.log("Rectangle's Area: " + rectangle.getArea());
+		console.log(rectangle.getPerimeter());
+
+		
+
+	</script>
+
+</body>
+
+<html>
