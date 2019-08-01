@@ -20,7 +20,20 @@ passing "Math.pow(10,12)"
 //1
 window.onload = function(){
 
+Date.prototype.getYesterday = function(){
+	var yesterday = this.getDay() - 1;
+	var dayOfTheWeek = new Array(7);
+	dayOfTheWeek[0]="Sunday";
+	dayOfTheWeek[1]="Monday";
+	dayOfTheWeek[2]="Tuesday";
+	dayOfTheWeek[3]="Wednesday";
+	dayOfTheWeek[4]="Thursday";
+	dayOfTheWeek[5]="Friday";
+	dayOfTheWeek[6]="Saturday";
+	console.log(dayOfTheWeek[yesterday]);
+	return dayOfTheWeek[yesterday];
 
+}
 	function getToday(){
 	var d1 = new Date();
 	console.log(d1);
@@ -33,6 +46,10 @@ getToday();
 getValentines();
 getSevenDate();
 getTodaysName();
+var myDate = new Date();
+myDate.getYesterday();
+document.getElementById("demo2").innerHTML=("<p>Yesterday was " + myDate.getYesterday() + "</p>");
+
 
 //2
 function getValentines(){
@@ -51,11 +68,6 @@ function getTodaysName(){
 	var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 	document.getElementById("demo").innerHTML+="<br>Today's Day is " + daysOfWeek[d1.getDay()];
 }
-
-
-
-
-
 
 }
 
